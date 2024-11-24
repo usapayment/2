@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Thanh Toán - Luxury Girl Booking</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #000000;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        margin: 0;
+      }
+      .payment-container {
+        width: 90%;
+        max-width: 600px;
+        background-color: #1a1a1a;
+        padding: 40px 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+      h1 {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        background-color: #000000;
+        border: 1px solid #daa520;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      h1:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .account-section {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border: 1px solid #daa520;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        border-left: 5px solid #ffd700;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      }
+      .account-section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(255, 206, 206, 0.2);
+      }
+      .highlight {
+        font-weight: bold;
+      }
+      .button {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #ffd700;
+        border: 1px solid #daa520;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      }
+      .button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+      }
+      .file-upload {
+        display: inline-block;
+        margin: 20px 0;
+      }
+      .file-upload input[type="file"] {
+        display: none;
+      }
+      .file-upload-label {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #ffd700;
+        border: 1px solid #daa520;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      }
+      .file-upload-label:hover {
+        background-color: #ffffff;
+        color: #000000;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+      }
+      .success-message {
+        color: green;
+        font-size: 18px;
+        margin-top: 10px;
+        display: none;
+      }
+      .video-container {
+        margin-top: 20px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .qr-code {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <h1>LUXURY GIRL BOOKING</h1>
+      <p
+        style="
+          color: #ffd700;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        "
+      >
+        Để đảm bảo quyền lợi và chất lượng dịch vụ tốt nhất dành riêng cho bạn,
+        Luxury Girl Booking yêu cầu khoản đăng ký 47$ (1.150.000 VND). Khoản phí
+        này chỉ là phí duy trì hệ thống giúp mình lấy được mã và tạo quyền ưu
+        tiên khi lựa chọn lịch hẹn, giúp tăng cường bảo mật và quyền riêng tư
+        tuyệt đối cho bạn. Phí các gói dịch vụ sẽ được thanh toán trực tiếp cho
+        nhân viên, đảm bảo tính minh bạch và tiện lợi trong quá trình giao dịch.
+        Đặc biệt, khoản 47$ này không phải là chi phí mất đi mà sẽ được trừ vào
+        gói dịch vụ bạn chọn.
+      </p>
+
+      <h3>Thông Tin Thanh Toán</h3>
+      <!-- Tài khoản TP BANK -->
+      <div class="account-section">
+        <p class="account-heading">Tài khoản TP BANK</p>
+        <p>
+          <strong>Ngân hàng:</strong>
+          <span class="highlight">TP BANK</span>
+        </p>
+      
+        <p>
+          <strong>Số tài khoản:</strong>
+          <span class="highlight" id="hana-account">6291 5011 998</span>
+          <button class="button" onclick="copyToClipboard('hana-account')">
+            Sao chép
+          </button>
+        </p>
+        <p>
+          <strong>Chủ tài khoản:</strong>
+          <span class="highlight">LUONG VAN LONG</span>
+        </p>
+      </div>
+      <div class="account-section">
+        <p class="account-heading">Tài khoản TP BANK</p>
+        <p>
+          <strong>Ngân hàng:</strong>
+          <span class="highlight">TP BANK</span>
+        </p>
+        <img src="https://i.ibb.co/yfgXyQf/photo-2024-11-24-07-38-09.jpg" alt="QR Code Gmail" class="qr-code" />
+        <p>
+          <strong>Zelle:</strong>
+          <span class="highlight" id="hana-account">maichau888bmo@gmail.com</span>
+          <button class="button" onclick="copyToClipboard('hana-account')">
+            Sao chép
+          </button>
+        </p>
+        <p>
+
+      <p style="color: #ffffff; font-size: 16px">
+        Hãy chắc chắn rằng bạn đã thanh toán đầy đủ theo yêu cầu trên. Sau khi
+        hoàn tất, bạn có thể nhận mã đặt lịch và tiếp tục sử dụng các dịch vụ
+        của chúng tôi
+      </p>
+
+    </div>
+      </button>
+    </div>
+    <script>
+      function copyToClipboard(accountId) {
+        const accountNumber = document.getElementById(accountId).innerText;
+        navigator.clipboard.writeText(accountNumber).then(() => {
+          alert("Đã sao chép số tài khoản: " + accountNumber);
+        });
+      }
+    </script>
+  </body>
+</html>
