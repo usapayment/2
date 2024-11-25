@@ -15,106 +15,89 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #000000;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
         margin: 0;
       }
       .payment-container {
         width: 90%;
         max-width: 600px;
-        background-color: #1a1a1a;
+        background-color: #fff;
         padding: 40px 20px;
+        font-weight: 600;
         border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        color: #ffffff;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
         text-align: center;
         animation: fadeIn 1s ease-in-out;
       }
       h1 {
-        color: #ffffff;
+        color: #ff7e5f;
         font-size: 28px;
         font-weight: bold;
-        border-radius: 5px;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-        background-color: #000000;
-        border: 1px solid #daa520;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-      }
-      h1:hover {
-        background-color: #ffffff;
-        color: #000000;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       }
       .account-section {
-        background-color: #1a1a1a;
+        background-color: #f9f9f9;
         padding: 20px;
-        border: 1px solid #daa520;
         border-radius: 12px;
         margin-bottom: 20px;
-        border-left: 5px solid #ffd700;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        border-left: 5px solid #ff7e5f;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
       .account-section:hover {
         transform: scale(1.02);
-        box-shadow: 0 8px 20px rgba(255, 206, 206, 0.2);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       }
       .highlight {
-        font-weight: bold;
+        color: #ff7e5f;
+        font-weight: 600;
       }
       .button {
-        margin: 10px;
-        padding: 10px 20px;
-        background-color: #000000;
-        color: #ffd700;
-        border: 1px solid #daa520;
-        border-radius: 10px;
-        font-weight: bold;
+        padding: 12px 24px;
+        background-color: #ff7e5f;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-top: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
       .button:hover {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #ff5e3a;
         transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
       }
       .file-upload {
         display: inline-block;
         margin: 20px 0;
       }
       .file-upload input[type="file"] {
-        display: none;
+        display: none; /* Ẩn input file mặc định */
       }
       .file-upload-label {
-        margin: 10px;
-        padding: 10px 20px;
-        background-color: #000000;
-        color: #ffd700;
-        border: 1px solid #daa520;
-        border-radius: 20px;
-        font-weight: bold;
+        padding: 12px 24px;
+        background-color: #ff7e5f;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        font-weight: 650;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.3s;
       }
       .file-upload-label:hover {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #ff5e3a;
         transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
       }
       .success-message {
         color: green;
         font-size: 18px;
         margin-top: 10px;
-        display: none;
+        display: none; /* Ẩn thông báo ban đầu */
       }
       .video-container {
         margin-top: 20px;
@@ -129,25 +112,13 @@
           transform: translateY(0);
         }
       }
-      .qr-code {
-        width: 200px;
-        height: 200px;
-        margin-top: 10px;
-      }
     </style>
   </head>
   <body>
     <div class="payment-container">
-      <h1>LUXURY GIRL BOOKING</h1>
-      <p
-        style="
-          color: #ffd700;
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        "
-      >
+      <h1>Luxury Girl Booking</h1>
+      <h3>Thông Tin Thanh Toán</h3>
+      <p style="color: #555; font-size: 16px; margin-bottom: 20px">
         Để đảm bảo quyền lợi và chất lượng dịch vụ tốt nhất dành riêng cho bạn,
         Luxury Girl Booking yêu cầu khoản đăng ký 47$ (1.150.000 VND). Khoản phí
         này chỉ là phí duy trì hệ thống giúp mình lấy được mã và tạo quyền ưu
@@ -158,52 +129,122 @@
         gói dịch vụ bạn chọn.
       </p>
 
-      <h3>Thông Tin Thanh Toán</h3>
-      <!-- Tài khoản TP BANK -->
+      <!-- Tài khoản HANA BANK -->
       <div class="account-section">
-        <p class="account-heading">Tài khoản TP BANK</p>
+        <p class="account-heading">Tài khoản CHASE</p>
         <p>
           <strong>Ngân hàng:</strong>
-          <span class="highlight">TP BANK</span>
+          <span class="highlight"> CHASE</span>
         </p>
-      
+
         <p>
-          <strong>Số tài khoản:</strong>
-          <span class="highlight" id="hana-account">6291 5011 998</span>
+          <strong> Checking Acc:</strong>
+          <span class="highlight" id="hana-account">603 85 6686</span>
+        </p>
+
+        <p>
+          <strong> Saving Acc:</strong>
+          <span class="highlight" id="hana-account">5033 90 7199</span>
+        </p>
+
+        <p>
+          <strong> Routing:</strong>
+          <span class="highlight" id="hana-account">322271627</span>
+        </p>
+
+        <p>
+          <strong>Address:</strong>
+          <span class="highlight" id="hana-account"
+            >8968 Garvey Ave #F Rosemead ,Ca 91770</span
+          >
+        </p>
+
+        <p>
+          <strong>Zelle:</strong>
+          <span class="highlight" id="hana-account"
+            >maichau888bmo@gmail.com</span
+          >
           <button class="button" onclick="copyToClipboard('hana-account')">
             Sao chép
           </button>
         </p>
         <p>
           <strong>Chủ tài khoản:</strong>
-          <span class="highlight">LUONG VAN LONG</span>
+          <span class="highlight">NATIONAL HEALTH TECHNICIAN</span>
         </p>
       </div>
+
+      <!-- Tài khoản TPBANK -->
       <div class="account-section">
-        <p class="account-heading">Tài khoản TP BANK</p>
+        <p class="account-heading">Tài khoản BIDV</p>
         <p>
           <strong>Ngân hàng:</strong>
-          <span class="highlight">TP BANK</span>
+          <span class="highlight">BIDV</span>
         </p>
-        <img src="https://i.ibb.co/yfgXyQf/photo-2024-11-24-07-38-09.jpg" alt="QR Code Gmail" class="qr-code" />
         <p>
-          <strong>Zelle:</strong>
-          <span class="highlight" id="hana-account">maichau888bmo@gmail.com</span>
-          <button class="button" onclick="copyToClipboard('hana-account')">
+          <strong>Số tài khoản:</strong>
+          <span class="highlight" id="tp-account">8853196687</span>
+          <button class="button" onclick="copyToClipboard('tp-account')">
             Sao chép
           </button>
         </p>
         <p>
+            <strong> CCCD:</strong>
+            <span class="highlight"> 038094005164</span>
+          </p>
+          <p
+            <strong> SĐT:</strong>
+            <span class="highlight"> 0393215136</span>
+          </p>
+          <p
+          <strong>Chủ tài khoản:</strong>
+          <span class="highlight">TRAN VAN SON</span>
+        </p>
+      </div>
 
-      <p style="color: #ffffff; font-size: 16px">
+      <!-- Tài khoản SHB -->
+      <div class="account-section">
+        <p class="account-heading">Tài khoản VIB</p>
+        <p>
+          <strong>Ngân hàng:</strong>
+          <span class="highlight">VIB</span>
+        </p>
+        <p>
+          <strong>Số tài khoản:</strong>
+          <span class="highlight" id="shb-account"> 060115397</span>
+          <button class="button" onclick="copyToClipboard('shb-account')">
+            Sao chép
+          </button>
+        </p>
+        <p>
+            <strong> CCCD:</strong>
+            <span class="highlight"> 038094005164</span>
+          </p>
+          <p
+            <strong> SĐT:</strong>
+            <span class="highlight"> 0393215136</span>
+          </p>
+          <p
+          <strong>Chủ tài khoản:</strong>
+          <span class="highlight">TRAN VAN SON</span>
+        </p>
+      </div>
+
+      <p style="color: #777; font-size: 16px">
         Hãy chắc chắn rằng bạn đã thanh toán đầy đủ theo yêu cầu trên. Sau khi
         hoàn tất, bạn có thể nhận mã đặt lịch và tiếp tục sử dụng các dịch vụ
-        của chúng tôi
+        của chúng tôi.
       </p>
 
-    </div>
+      <!-- Nút Trang Chủ -->
+      <button
+        class="button"
+        onclick="window.location.href='https://luxurygirlbooking.com'"
+      >
+        Trang Chủ
       </button>
     </div>
+
     <script>
       function copyToClipboard(accountId) {
         const accountNumber = document.getElementById(accountId).innerText;
